@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat - Socket</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div id="contenedor-chat">
+        <div id="ventana-chat">
+            <div id="salida"></div>
+        </div>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button id="enviar">Enviar</button>
+    </div>
+    
+    <form id="uploadFile">
+    <div id="imag"></div> 
+        Sube un archivo:
+            <input type="file" name="file" id="file">
+            <button id="earchivo" type="submit">Enviar Archivo</button>  
+    </form>
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</html>
